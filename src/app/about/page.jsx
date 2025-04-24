@@ -68,7 +68,7 @@ export default function AboutPage() {
                   📱 +998 93 050 2804 <br />
                   🌐{' '}
                   <a
-                    href="https://github.com/Ruxshona2804/my-vite-app-1.git"
+                    href="https://github.com/Ruxshona2804"
                     className="text-blue-300 hover:underline"
                   >
                     GitHub профиль
