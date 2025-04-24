@@ -34,14 +34,21 @@ const allProjects = [
   },
   {
     title: 'My portfolio ',
-    description: 'Погода с API и геолокацией.',
-    tech: [ 'SASS', 'HTML'],
+    description: 'Первое портфолио ',
+    tech: [ 'SASS', 'HTML', 'DarkMode' ],
     github: 'https://github.com/Ruxshona2804/my-portfiloi-1.git',
     demo: 'https://my-portfiloi-1-q8oh.vercel.app/',
   },
+  {
+    title: 'Travello ',
+    description: 'Сайт  на английском и узбекском языках. Также работа с DarkMode ',
+    tech: [ 'Tailwind', 'DarkMode', 'i18n'],
+    github: 'https://github.com/Ruxshona2804/travello.git',
+    demo: 'travello-phi.vercel.app',
+  },
 ];
 
-const techList = ['Все', 'React', 'Next.js', 'JavaScript', 'HTML', 'CSS', 'Tailwind'];
+const techList = ['Все', 'React', 'Next.js', 'JavaScript', 'HTML', 'CSS', 'Tailwind', 'i18n','DarkMode'];
 
 export default function PortfolioPage() {
   const [selectedTech, setSelectedTech] = useState('Все');
@@ -55,7 +62,7 @@ export default function PortfolioPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-950 to-black px-6 py-24 text-white">
-      <div className="max-w-6xl mx-auto space-y-16">
+      <div className="container mx-auto space-y-16">
         <div className="text-center">
           <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-violet-400 to-indigo-400 drop-shadow-lg">
             Портфолио

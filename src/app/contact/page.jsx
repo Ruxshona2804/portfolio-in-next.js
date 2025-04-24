@@ -6,7 +6,7 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSending, setIsSending] = useState(false);
 
-  const handleInputChange = (e)  => {
+  const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
@@ -23,15 +23,15 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-600 to-gray-50 text-white px-4 py-20 sm:px-6">
-      <div className="max-w-3xl mx-auto space-y-12">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-600 to-gray-50 text-white px-4 py-20 sm:px-6">
+      <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-violet-400 to-indigo-400">
+          <h1 className="text-4xl sm:text-5xl mt-8 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-violet-400 to-indigo-400">
             Свяжитесь со мной
           </h1>
           <p className="mt-4 text-gray-300">
@@ -46,7 +46,7 @@ export default function ContactPage() {
           transition={{ duration: 0.9, delay: 0.2 }}
           className="bg-gradient-to-b from-gray-800 to-gray-900 rounded-2xl p-8 shadow-xl space-y-6"
         >
-          {/* Имя */}
+
           <div>
             <label htmlFor="name" className="block text-sm text-gray-300 mb-2">Ваше имя</label>
             <input
@@ -61,7 +61,7 @@ export default function ContactPage() {
             />
           </div>
 
-          {/* Email */}
+
           <div>
             <label htmlFor="email" className="block text-sm text-gray-300 mb-2">Ваш Email</label>
             <input
@@ -76,7 +76,7 @@ export default function ContactPage() {
             />
           </div>
 
-          {/* Сообщение */}
+
           <div>
             <label htmlFor="message" className="block text-sm text-gray-300 mb-2">Сообщение</label>
             <textarea
@@ -91,7 +91,7 @@ export default function ContactPage() {
             />
           </div>
 
-          {/* Кнопка отправки */}
+
           <div>
             <button
               type="submit"
